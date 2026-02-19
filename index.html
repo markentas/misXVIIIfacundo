@@ -1,1 +1,568 @@
-Mis 18 Facundo
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVITACIÓN A MIS 15 AÑOS | LARA</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Reset básico */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        font-family: "Montserrat", Arial, sans-serif;
+        scroll-behavior: smooth;
+        background: #171721;
+        color: #fff;
+      }
+
+      section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        color: #fff;
+      }
+
+      /* Secciones con fondo */
+      #section1 {
+        background-color: #111;
+      }
+      #section2 {
+        background-color: #171721;
+        background: url("img/bg-section2.jpg") top center/cover no-repeat;
+      }
+      #section3,
+      #section5,
+      #section7,
+      #section9,
+      #section11 {
+        background-color: #0f2149;
+        height: 50vh;
+      }
+      #section4,
+      #section6,
+      #section10 {
+        background-color: #171721;
+        height: 50vh;
+      }
+      #section8 {
+        background: url("img/bg-globos3-section6.jpeg") top center/cover
+          no-repeat;
+        height: 50vh;
+      }
+
+      /* Secciones: Textos y botones */
+      #section1 h1 {
+        font-size: 2.5em;
+        font-weight: 300;
+        margin: 5px;
+      }
+      #section1 p {
+        font-size: 1.1em;
+        font-weight: 200;
+        margin: 30px;
+      }
+
+      #section2 h1 {
+        font-size: 5em;
+        font-weight: 500;
+        margin: 10px;
+      }
+      #section2 p {
+        font-size: 1.5em;
+        font-weight: 200;
+        margin: 10px;
+      }
+      #section2 a {
+        font-weight: 400;
+        color: #000;
+        text-decoration: none;
+        background-color: #fff;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      #section3 h1 {
+        border-top: #fff solid 1px;
+        border-bottom: #fff solid 1px;
+        padding: 30px 10px 30px 10px;
+        font-size: 1.2em;
+        font-weight: 400;
+      }
+
+      #section4 h1 {
+        padding: 20px;
+        font-weight: 300;
+        font-size: 1.5em;
+      }
+      #section4 p {
+        padding: 3px;
+      }
+
+      #section5 h1 {
+        padding: 20px;
+        font-weight: 300;
+        font-size: 1.5em;
+      }
+
+      #section5 p {
+        margin: 2px;
+      }
+      #section5 a {
+        margin-top: 30px;
+      }
+
+      #section6 h1 {
+        padding: 20px;
+        font-weight: 300;
+        font-size: 1.5em;
+      }
+      #section6 span {
+        display: inline-flex;
+        align-items: center; /* centra verticalmente imagen y texto */
+        justify-content: center; /* centra el contenido */
+        gap: 8px; /* espacio entre imagen y texto */
+        text-decoration: none;
+        margin: 20px;
+        color: #fff;
+      }
+
+      #section6 .titular {
+        margin: -20px;
+      }
+
+      #section7 h1 {
+        padding: 20px;
+        font-weight: 300;
+        font-size: 1.5em;
+      }
+      #section8 h1 {
+        border-top: #fff solid 1px;
+        border-bottom: #fff solid 1px;
+        width: 60%;
+        padding: 30px 10px 30px 10px;
+        font-size: 2em;
+        font-weight: 600;
+      }
+      #section9 h1 {
+        padding: 20px;
+        font-weight: 500;
+        font-size: 1.5em;
+      }
+
+      #section9 .celebra {
+        font-size: 1.2em;
+        font-weight: 700;
+        color: #ffffff;
+        text-shadow:
+          0 0 5px rgba(255,255,255,0.6),
+          0 0 10px rgba(255,255,255,0.4),
+          0 0 20px rgba(255,255,255,0.3);
+        }
+      }
+
+      #section10 h1 {
+        padding: 20px 0 0 0;
+        font-weight: 300;
+        font-size: 1.5em;
+      }
+      #section10 h2 {
+        font-weight: 200;
+        font-size: 1.1em;
+        margin: 5px 0 30px 0;
+      }
+      #section10 p {
+        padding: 5px;
+      }
+
+      #section11 h1 {
+        padding: 20px 0 0 0;
+        font-weight: 300;
+        font-size: 1.5em;
+      }
+
+      /* Tipografía general */
+      h1 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Botones estilo cuadrado */
+      a {
+        display: inline-block; /* permite padding y tamaño como botón */
+        padding: 10px 20px; /* espacio interno */
+        border: 2px solid #fff; /* borde blanco */
+        color: #fff; /* texto blanco */
+        text-decoration: none; /* quita subrayado */
+        font-weight: 500; /* opcional: más visible */
+        border-radius: 4px; /* ligeramente redondeado, cambiar a 0 para cuadrado perfecto */
+        transition:
+          background 0.3s,
+          color 0.3s; /* efecto suave */
+        cursor: pointer;
+      }
+
+      /* Hover opcional para interacción */
+      a:hover {
+        background-color: #fff; /* fondo blanco al pasar el mouse */
+        color: #000; /* texto negro al pasar el mouse */
+      }
+
+      /* Contador */
+      #countdown_text {
+        display: flex;
+        justify-content: space-between; /* distribuye los bloques */
+        align-items: center;
+        width: 80%;
+        max-width: 600px; /* limita ancho máximo */
+        margin: 20px auto 0 auto; /* centrado horizontal */
+        padding: 0 10px;
+        gap: 15px;
+      }
+
+      .count-block {
+        display: flex;
+        flex-direction: column; /* número arriba, texto abajo */
+        align-items: center; /* centra horizontalmente */
+        flex: 1; /* bloques de igual tamaño */
+      }
+
+      .count-block span {
+        display: block;
+      }
+
+      .count-block span:first-child {
+        /* números */
+        font-size: 1.7em;
+        font-weight: 500;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+      }
+
+      .count-block .label {
+        /* texto debajo */
+        font-size: 0.9em;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+
+      /* Animaciones reveal */
+      .reveal > * {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      .reveal.show > * {
+        animation: revealUp 0.7s ease forwards;
+      }
+      .reveal.show > *:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .reveal.show > *:nth-child(2) {
+        animation-delay: 0.3s;
+      }
+      .reveal.show > *:nth-child(3) {
+        animation-delay: 0.5s;
+      }
+      .reveal.show > *:nth-child(4) {
+        animation-delay: 0.7s;
+      }
+      .reveal.show > *:nth-child(5) {
+        animation-delay: 0.9s;
+      }
+
+      @keyframes revealUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Reproductor flotante */
+      .music-player {
+        position: fixed;
+        bottom: 60px;
+        right: 20px;
+        background: #fff;
+        padding: 10px 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        z-index: 1000;
+        opacity: 0;
+      }
+
+      #audioPlayer {
+        width: 250px;
+        transform: scale(1.2);
+        transform-origin: bottom right;
+      }
+
+      /* Botón circular Play/Pause */
+      #taggleAB {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #222;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+        font-size: 28px;
+        outline: none;
+        -webkit-tap-highlight-color: transparent; /* elimina el efecto azul en móviles */
+      }
+      #taggleAB:focus {
+        outline: none; /* asegura que tampoco aparezca al tabular */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Secciones -->
+    <section id="section1" class="reveal">
+      <h1>MIS 18 FACUNDO</h1>
+      <p>QUIERO QUE SEAS PARTE DE ESTE MOMENTO TAN IMPORTANTE PARA MÍ</p>
+      <a href="#section2">INGRESAR</a>
+    </section>
+
+    <section id="section2" class="reveal">
+      <h1>MIS 18 <br />FACUNDO</h1>
+
+      <div id="countdown_text">
+        <div class="count-block">
+          <span id="days">0</span>
+          <span class="label">DIAS</span>
+        </div>
+        <div class="count-block">
+          <span id="hours">0</span>
+          <span class="label">HORAS</span>
+        </div>
+        <div class="count-block">
+          <span id="minutes">0</span>
+          <span class="label">MINUTOS</span>
+        </div>
+        <div class="count-block">
+          <span id="seconds">0</span>
+          <span class="label">SEGUNDOS</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3" class="reveal">
+      <h1>TU PRESENCIA EN ESTA NOCHE NUNCA <br />ES MUY IMPORTANTE PARA MI</h1>
+    </section>
+
+    <section id="section4" class="reveal">
+      <img
+        src="img/ffffff-blanco-icono-3-ezgif.com-webp-to-gif-converter.gif"
+        width="60"
+        height="60"
+      />
+      <h1>¿CUÁNDO?</h1>
+      <p>04 DE ABRIL DE 2026</p>
+      <p>| 12:00 HS |</p>
+    </section>
+
+    <section id="section5" class="reveal">
+      <img
+        src="img/ffffff-blanco-icono-25-ezgif.com-webp-to-gif-converter.gif"
+        width="60"
+        height="60"
+      />
+      <h1>¿DÓNDE?</h1>
+      <p><b>CARBEL</b></p>
+      <p>LAS HERAS 19 | BARRIO YPF</p>
+      <a href="https://maps.app.goo.gl/pPjpzxFBvqa4fpHAA" target="_blank"
+        >COMO LLEGAR</a
+      >
+    </section>
+
+    <section id="section6" class="reveal">
+      <img
+        src="img/ffffff-blanco-icono-12-ezgif.com-webp-to-gif-converter.gif"
+        width="60"
+        height="60"
+      />
+      <h1>REGALOS</h1>
+      <p>
+        LO MAS IMPORTANTE ES COMPARTIR<br />ESTE DIA CONTIGO. <br />SI GUSTAS
+        HACERME UN PRESENTE <br />PUEDES DEPOSITAR AQUI:
+      </p>
+      <span
+        ><img
+          src="img/MP_RGB_HANDSHAKE_color_vertical.png"
+          width="40"
+        />MARU.FACU.DINO</span
+      >
+      <span class="titular">TITULAR: Mirna Marlene Limon</span>
+    </section>
+
+    <section id="section7" class="reveal">
+      <img
+        src="img/ffffff-blanco-icono-6-ezgif.com-webp-to-gif-converter.gif"
+        width="60"
+        height="60"
+      />
+      <h1>QUIERO VER TUS FOTOS</h1>
+      <p>
+        PUEDEN ETIQUETAR TODAS SUS <br />PUBLICACIONES DE INSTAGRAM <br />A
+        @facuuu_paezz <br />O CON EL HASHTAG #mis18facu2026
+      </p>
+    </section>
+
+    <section id="section8" class="reveal">
+      <h1>CELEBRA <br /><b>¡LA VIDA!</b></h1>
+    </section>
+
+    <section id="section9" class="reveal">
+      <img
+        src="img/ffffff-blanco-icono-20-ezgif.com-webp-to-gif-converter.gif"
+        width="60"
+        height="60"
+      />
+      <h1>ACOMPAÑAME ESTE DIA</h1>
+      <p class="celebra">
+        <i
+          >Brindemos por el presente <br />y por cada momento que nos hace
+          vibrar.<br />
+          ¡Celebremos la vida!</i
+        >
+      </p>
+    </section>
+
+    <section id="section10" class="reveal">
+      <img
+        src="img/ffffff-blanco-icono-8-ezgif.com-webp-to-gif-converter.gif"
+        width="60"
+        height="60"
+      />
+      <h1>CONFIRMAR ASISTENCIA</h1>
+      <h2>HASTA ANTES DEL 23 DE MARZO</h2>
+      <a
+        href="https://api.whatsapp.com/send?phone=5493873652450&text=Confirmo%20mi%20asistencia%20a%20tus%20XV,%20ah%C3%AD%20estar%C3%A9%20%E2%99%A5"
+        target="_blank"
+        >CONFIRMAR</a
+      >
+    </section>
+
+    <section id="section11" class="reveal">
+      <img
+        src="img/ffffff-blanco-icono-34-ezgif.com-webp-to-gif-converter.gif"
+        width="60"
+        height="60"
+      />
+      <h1>TE ESPERO</h1>
+    </section>
+
+    <!-- Reproductor de música -->
+    <div class="music-player">
+      <audio id="audioPlayer" loop>
+        <source
+          src="audio/Carlos Rivera - Te Esperaba (Lyric Video) [Rir_fuLX7HM].mp3"
+          type="audio/mpeg"
+        />
+        Tu navegador no soporta audio.
+      </audio>
+    </div>
+
+    <!-- Botón flotante Play/Pause -->
+    <div id="taggleAB"><i class="fas fa-play"></i></div>
+
+    <script>
+      // Contador regresivo
+      const targetDate = new Date("April 4, 2026 12:00:00").getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance < 0) {
+          document.getElementById("countdown_text").innerHTML =
+            "¡Llegó el momento!";
+          clearInterval(interval);
+          return;
+        }
+
+        document.getElementById("days").textContent = Math.floor(
+          distance / (1000 * 60 * 60 * 24),
+        );
+        document.getElementById("hours").textContent = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        );
+        document.getElementById("minutes").textContent = Math.floor(
+          (distance % (1000 * 60 * 60)) / (1000 * 60),
+        );
+        document.getElementById("seconds").textContent = Math.floor(
+          (distance % (1000 * 60)) / 1000,
+        );
+      }
+
+      const interval = setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // Animaciones reveal
+      const sections = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("show");
+          });
+        },
+        { threshold: 0.2 },
+      );
+      sections.forEach((section) => observer.observe(section));
+
+      // Reproductor música con botón flotante Play/Pause
+      const audio = document.getElementById("audioPlayer");
+      const toggleAB = document.getElementById("taggleAB");
+
+      toggleAB.addEventListener("click", () => {
+        if (audio.paused) audio.play();
+        else audio.pause();
+      });
+
+      audio.addEventListener(
+        "play",
+        () => (toggleAB.innerHTML = '<i class="fas fa-pause"></i>'),
+      );
+      audio.addEventListener(
+        "pause",
+        () => (toggleAB.innerHTML = '<i class="fas fa-play"></i>'),
+      );
+
+      // Autoplay tras primer click en la página (opcional)
+      document.addEventListener(
+        "click",
+        () => {
+          if (audio.paused) audio.play();
+        },
+        { once: true },
+      );
+    </script>
+  </body>
+</html>
